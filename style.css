@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0 ;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-family: 'Roboto';
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/*------------------------------------*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.s1{
+    background-color: #F3EED9;
+    margin: auto;
+    text-align: center;
+    padding:5em;
+}
+
+.s1div{
+  width: 85%;
+  margin: auto;
+}
+
+
+.s2{
+    background-color: white;
+    text-align: left;
+    padding:2em;
+}
+
+.s2 h2 {
+  text-align: center;
+}
+.s2div{
+    width: 78%;
+    margin: auto;
+    display: flex;
+}
+
+.s3{
+    color: white;
+    background-color: #222C2A;
+    padding:5em;
+}
+
+.s3div{
+  width: 85%;
+  display: flex;
+  margin: auto;
+}
+.s3text{
+  width: 50%;
+  text-align: left;
+  padding: 1rem;
+}
+
+.s4{
+    color: white;
+    background-color: #824936;
+    padding:5em;
+}
+
+.s4div{
+  width: 85%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin: auto;
+  
+}
+
+.s4text{
+  text-align: left;
+  padding: 1rem;
+}
+
+h2{
+margin-bottom: 1em;
+}
+
+p{
+  font-size: small;
+}
+
+
+@media (max-width:600px) {
+  .s2div, .s3div, .s4div {
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    /* background-color: pink; */
+  }
+
+  .s3text, .s4text{
+    width: 100%;
+  }
+    
+
+  img{
+    display: block;
+  }
+    
+}
