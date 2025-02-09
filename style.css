@@ -148,7 +148,7 @@ p{
 }
 
 
-@media (max-width:600px) {
+@media (max-width:905px) {
   .s2div, .s3div, .s4div {
     flex-direction: column;
     margin: auto;
@@ -162,7 +162,8 @@ p{
     
 
   img{
-    display: block;
+    width: 100%;
+    object-fit: contain;
   }
     
 }
